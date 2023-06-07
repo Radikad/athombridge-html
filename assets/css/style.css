@@ -333,7 +333,7 @@ label {
 }
 
 .xlr {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
   margin-top: -7px;
 }
@@ -1053,7 +1053,7 @@ label {
   background-image: url(../images/banner-bg.png);
   background-repeat: no-repeat;
   background-size: 35%;
-  background-position: right 5% bottom 20%;
+  background-position: right 20% bottom 10%;
 }
 .banner-section .overlay .banner-content {
   padding: 240px 0 170px;
