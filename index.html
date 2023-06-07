@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Athom Bridge - Easily add any smarthome device to HomeKit</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbar-content">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#features">Features</a>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Shop</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="shop-grid-list.html">Shop</a></li>
+                                        <li><a class="nav-link" href="shop-single.html">Shop Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="whishlist.html">Wishlist</a></li>
+                                        <li><a class="nav-link" href="tracking.html">Tracking</a></li>
+                                        <li class="dropend sub-navbar">
+                                            <a href="javascript:void(0)" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                                            <ul class="dropdown-menu sub-menu shadow show">
+                                                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                                                <li><a class="nav-link" href="blog-single.html">Blog Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="nav-link" href="faq.html">FAQs</a></li>
+                                        <li><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a class="nav-link" href="terms-conditions.html">Terms</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="right-area gap-4 header-action d-flex align-items-center max-un">
+                                <div class="single-item search-area">
+                                    <div class="search-btn btn-area">
+                                        <i class="icon-h-search"></i>
+                                    </div>
+                                    <div class="main-area search-content">
+                                        <form action="#">
+                                            <div class="form-group input-area d-flex align-items-center">
+                                                <input type="text" placeholder="Search..." autocomplete="off">
+                                                <button class="cmn-btn">Search</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="single-item cart-area">
+                                    <div class="cart-btn btn-area">
+                                        <i class="icon-f-cart"></i>
+                                    </div>
+                                    <div class="main-area cart-content">
+                                        <div class="close-btn position-absolute">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="head-area d-flex justify-content-between">
+                                            <h5>Cart</h5>
+                                            <span>03</span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="abs-area">
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                                <a href="javascript:void(0)" class="d-flex align-items-center">
+                                                    <div class="img-area">
+                                                        <img src="assets/images/product-3.png" alt="image">
+                                                    </div>
+                                                    <div class="text-area">
+                                                        <h6>Ginbo W006</h6>
+                                                        <div class="price-area">
+                                                            <span class="cur-price">$17.00</span>
+                                                            <span><del>$22.00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="abs-area">
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                                <a href="javascript:void(0)" class="d-flex align-items-center">
+                                                    <div class="img-area">
+                                                        <img src="assets/images/product-3.png" alt="image">
+                                                    </div>
+                                                    <div class="text-area">
+                                                        <h6>Ginbo W006</h6>
+                                                        <div class="price-area">
+                                                            <span class="cur-price">$27.00</span>
+                                                            <span><del>$32.00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="abs-area">
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                                <a href="javascript:void(0)" class="d-flex align-items-center">
+                                                    <div class="img-area">
+                                                        <img src="assets/images/product-4.png" alt="image">
+                                                    </div>
+                                                    <div class="text-area">
+                                                        <h6>Ginbo W006</h6>
+                                                        <div class="price-area">
+                                                            <span class="cur-price">$12.00</span>
+                                                            <span><del>$18.00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-area text-center mt-4">
+                                            <a href="javascript:void(0)" class="cmn-btn">Checkout</a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-overlay"></div>
+                                </div>
+                                <a href="shop-grid-list.html" class="cmn-btn">Order Now</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+    
+    <!-- Banner Section start -->
+    <section class="banner-section index" id="home">
+        <div class="overlay">
+            <div class="banner-content">
+                <div class="container wow fadeInUp">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-xl-6 col-md-9">
+                            <div class="main-content">
+                                <div class="top-area section-text">
+                                    <h1 class="mb-3">Affordable <span>Bridge</span> For HomeKit</h1>
+                                    <p class="xlr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, cursus eget arcu non ipsum .</p>
+                                    <div class="video-area mt-4 d-flex gap-4 align-items-center">
+                                        <div class="magnific-area position-relative d-flex align-items-center">
+                                            <div class="bg-area">
+                                                <img class="bg-item max-un" src="assets/images/video-bg-1.png" alt="image">
+                                            </div>
+                                            <div class="content-area text-center position-absolute d-flex align-items-center justify-content-center">
+                                                <div class="content-box">
+                                                    <a class="mfp-iframe popupvideo d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">
+                                                        <img src="assets/images/icon/play.png" alt="icon">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-area">
+                                            <p>Watch Video</p>
+                                            <h4 class="mt-2">Price: $94</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+
+    <!-- Features start -->
+    <section class="features-section" id="features">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row cus-mar justify-content-between align-items-center">
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-icon-1.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Plug In Play</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-icon-2.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Mice Mute Option</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-icon-3.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>RGB LED Light</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-icon-4.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Touch Control</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features end -->
+
+    <!-- Home Speaker start -->
+    <section class="home-speaker">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-0 order-1">
+                        <div class="sec-img">
+                            <img src="assets/images/home-speaker-bg.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-text">
+                            <h2 class="title">Best Speaker For your Home</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas tristique lectus consequat ut dolor nulla lacus. Sed quis enim ornare arcu viverra mi viverra. Egestas placerat morbi proin diam congue magna bibendum lorem scelerisque.</p>
+                        </div>
+                        <div class="btn-area">
+                            <a href="shop-grid-list.html" class="cmn-btn alt">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Speaker end -->
+
+    <!-- Features start -->
+    <section class="features-second" id="features">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row cus-mar align-items-center">
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-1.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Echo Speaker</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-2.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Low Power Mode</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-3.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Voice Assistant</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-4.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Wifi 6.0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-5.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Bluetooth 5.0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-6.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>RGB LED Light</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-7.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Portable Size</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/icon/features-sec-icon-8.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Voice Control</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features end -->
+
+    <!-- Customize start -->
+    <section class="customize">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp position-relative">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-text">
+                            <h2 class="title">Customize Your Speaker</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas tristique lectus consequat ut dolor nulla lacus. Sed quis enim ornare arcu viverra mi viverra. Egestas placerat morbi proin diam congue magna bibendum lorem scelerisque.</p>
+                        </div>
+                        <div class="btn-area">
+                            <a href="shop-grid-list.html">Explore More  <img src="assets/images/icon/arrow.png" alt="icon"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sec-img d-rtl">
+                            <img src="assets/images/customize-bg.png" class="max-un" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customize end -->
+
+    <!-- Buy Speaker start -->
+    <section class="buy-speaker">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-text">
+                            <h2 class="title">Buy The Best speaker</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="main-content">
+                            <div class="area-img">
+                                <img src="assets/images/buy-speaker-bg.png" class="max-un" alt="image">
+                            </div>
+                            <div class="right-area">
+                                <div class="section-area">
+                                    <h5 class="title">Amazing Portable (Black) Speaker</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper orci aenean gravida amet, eget orci rutrum all of the  consectetur euismod. </p>
+                                </div>
+                                <div class="star-area mt-3 mb-3">
+                                    <a href="#" tabindex="0"><i class="fas fa-star"></i></a>
+                                    <a href="#" tabindex="0"><i class="fas fa-star"></i></a>
+                                    <a href="#" tabindex="0"><i class="fas fa-star"></i></a>
+                                    <a href="#" tabindex="0"><i class="fas fa-star"></i></a>
+                                    <a href="#" tabindex="0"><i class="fas fa-star blank"></i></a>
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="cmn-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Buy Speaker end -->
+
+    <!-- Why Choose start -->
+    <section class="why-choose">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h2 class="title">Why Choose Us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-5 order-lg-0 order-1">
+                        <div class="sec-img d-rtl">
+                            <img src="assets/images/choose-us-bg.png" class="max-un" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="cus-mar">
+                            <div class="single-box">
+                                <img src="assets/images/icon/choose-us-icon-1.png" alt="image">
+                                <h5>Free Shipping</h5>
+                            </div>
+                            <div class="single-box">
+                                <img src="assets/images/icon/choose-us-icon-2.png" alt="image">
+                                <h5>Product Return</h5>
+                            </div>
+                            <div class="single-box">
+                                <img src="assets/images/icon/choose-us-icon-3.png" alt="image">
+                                <h5>1 Year Guarantee </h5>
+                            </div>
+                            <div class="single-box">
+                                <img src="assets/images/icon/choose-us-icon-4.png" alt="image">
+                                <h5>24/7 Support</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose end -->
+
+    <!-- Testimonials start -->
+    <section class="testimonials" id="testimonials">
+        <div class="overlay pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h2 class="title">Testimonial</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="testimonial-carousel">
+                            <div class="single-content">
+                                <div class="single-slide">
+                                    <div class="img-area ">
+                                        <img src="assets/images/testimonial-1.png" alt="image">
+                                    </div>
+                                    <h5>Jesicca Mario</h5>
+                                    <div class="text-area">
+                                        <div class="star-area">
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star blank"></i></a>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip all to iscing elit. Nec  metus, cum pretium etiam in. Lacus, sed id blandit nunc sed sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-content">
+                                <div class="single-slide">
+                                    <div class="img-area ">
+                                        <img src="assets/images/testimonial-2.png" alt="image">
+                                    </div>
+                                    <h5>Jeams cemiron</h5>
+                                    <div class="text-area">
+                                        <div class="star-area">
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star blank"></i></a>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip all to iscing elit. Nec  metus, cum pretium etiam in. Lacus, sed id blandit nunc sed sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-content">
+                                <div class="single-slide">
+                                    <div class="img-area ">
+                                        <img src="assets/images/testimonial-2.png" alt="image">
+                                    </div>
+                                    <h5>Jeams cemiron</h5>
+                                    <div class="text-area">
+                                        <div class="star-area">
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star blank"></i></a>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip all to iscing elit. Nec  metus, cum pretium etiam in. Lacus, sed id blandit nunc sed sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials end -->
+
+    <!-- Newsletter start -->
+    <section class="newsletter" id="newsletter">
+        <div class="overlay pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 dark-sec">
+                        <div class="section-area">
+                            <h2 class="title">Srbscribe to Our Newsletter</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, tristique in egestas amet tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 dark-sec">
+                        <form action="#">
+                            <div class="d-flex gap-3">
+                                <input type="text" placeholder="Email...">
+                                <button class="cmn-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter end -->
+    
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="footer-area pt-120">
+            <div class="container">
+                <div class="row mb-60 justify-content-center align-items-center">
+                    <div class="col-md-3 text-center text-md-start">
+                        <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="link-area flex-wrap gap-4 mt-md-0 mt-4 d-flex justify-content-md-end justify-content-center">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="shop-grid-list.html">Shop</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row gap-3 gap-md-0 justify-content-between align-items-center">
+                        <div class="col-md-6 order-md-0 order-1">
+                            <div class="copyright text-md-start text-center">
+                                <p>© 2022 <a href="index.html">Ginbo</a>. All rights reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center justify-content-lg-end">
+                            <div class="social">
+                                <ul class="d-flex gap-4">
+                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
