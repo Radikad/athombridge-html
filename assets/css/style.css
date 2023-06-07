@@ -1055,6 +1055,13 @@ label {
   background-size: 35%;
   background-position: right 20% bottom 10%;
 }
+
+@media screen and  (min-width:1940px){
+  .banner-section{
+    background-size: 25%;
+  }
+}
+
 .banner-section .overlay .banner-content {
   padding: 240px 0 170px;
 }
